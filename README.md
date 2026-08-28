@@ -20,3 +20,20 @@ $ conda create -n mini-rag python=3.8
 ```bash
 $ conda activate mini-rag
 ```
+
+## Installation 
+
+### install the require packages
+
+```bash
+$ pip install -r requirements.txt
+```
+
+### Setup the environment variables
+
+```bash
+$ cp .env.example .env
+```
+
+Setup your environment variables `.env` file. Like `OPENAI_API_KEY` Value.
+ 
