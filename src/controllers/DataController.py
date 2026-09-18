@@ -1,10 +1,9 @@
-import os
-
 from .BaseController import BaseController
 from .ProjectController import ProjectController
 from fastapi import UploadFile
 from models import ResponseSignal
 import re
+import os
 
 class DataController(BaseController):
 
@@ -42,7 +41,7 @@ class DataController(BaseController):
 
     def get_cleaned_filename(self, original_filename: str):
 
-        cleaned_file_name = re.sub(r'[^\w]', '', original_filename.strip()) 
+        cleaned_file_name = re.sub(r'[^\w.]', '', original_filename.strip()) 
 
         cleaned_file_name = cleaned_file_name.replace(" ", "_")
 
