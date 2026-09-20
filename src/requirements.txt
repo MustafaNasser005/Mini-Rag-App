@@ -7,3 +7,4 @@ pydantic==2.13.5
 aiofiles==25.1.0
 langchain==1.4.1
 pymupdf==1.28.2
+motor==3.7.1
